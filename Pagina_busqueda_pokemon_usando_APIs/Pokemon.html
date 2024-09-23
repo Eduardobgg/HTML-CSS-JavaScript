@@ -1,0 +1,67 @@
+<!--Garcia Gomez Eduardo Biali-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="diseño.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet"> <!--Font para titulo con estilo de pokemon-->
+
+</head>
+<body class="body-container">
+  <!--Titulo de mi pagina-->
+    <h1 class="title-container text-center">POKEDEX</h1>
+
+
+    <!--Input para ingresar el nombre del pokemon-->
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">👾</span>
+        <input type="text" id="pokemonInput" class="form-control" placeholder="Nombre o ID del Pokémon">
+        <button id="searchBtn" class="btn btn-primary">Buscar</button>
+    </div>
+
+    <ul></ul> <!--Salto de linea-->
+
+    <div class="pokemon-container text-center">
+      <!--Tarjeta para que se vea mas estetica la información del pokemon de Bootstrap-->
+      <div class="card" style="width: 18rem;">
+        <!--Imagen del pokemon-->
+        <div id="pokemonInfo" class="pokemon-image mx-auto"></div>
+        <!--Información del pokemon, nombre, una pequeña descripción, habilidades, Tipo de Pokemon y Region deonde aparece-->
+        <div class="card-body">
+          <h5 class="card-title"></h5> <!-- Nombre -->
+          <p class="pokemon-id"></p> <!-- ID del Pokémon -->
+          <p class="card-text"></p> <!-- Descripción general del pokemon -->
+        </div>
+        <ul class="list-group list-group-flush">
+          <p>Habilidades</p>
+          <li class="list-group-item"></li> <!--Habilidad 1-->
+          <li class="list-group-item"></li> <!--Habilidad 2-->
+          <li class="list-group-item"></li> <!--Habilidad 3-->
+        </ul>
+        <div class="card-body">
+          <p href="#" class="card-link">Tipo de Pokemon</p> <!--Tipo de Pokemon-->
+          <p href="#" class="card-link">Region</p> <!-- Region donde aparece el pokemon-->
+        </div>
+      </div>
+    </div>
+
+     <!-- Contenedor para el historial de búsquedas -->
+     <div class="search-history text-center mt-4">
+      <h5>Historial de Búsquedas</h5>
+      <ul id="searchHistory" class="list-group list-group-flush"></ul>
+  </div>
+
+  <!-- boton para limpiar la información-->
+  <div class="text-center mt-3">
+    <button id="clearBtn" class="btn btn-danger">Limpiar</button>
+</div>
+
+    <!-- Incluir Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Busqueda.js"></script>
+
+</body>
+</html>

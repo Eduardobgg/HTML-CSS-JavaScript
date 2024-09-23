@@ -1,0 +1,56 @@
+.body-container {
+    background: #e9e64d; 
+    height: 100vh; 
+    margin: 20px; 
+    padding: 5px; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.h1-container{
+    color: #cf2b2b; 
+    padding: 0;
+    background-color: rgb(231, 212, 42);
+    font-size: large; 
+    font-size: 40px; 
+    text-align: center; 
+    font-family: "Amatic SC", sans-serif; /* Fuente de fonts */ 
+}
+
+.img-container{
+    width: 300px;
+    padding: 2%;
+    border-radius: 20%;
+}
+
+.img-2{
+    text-align: right;
+    padding: 2%;
+    width: 800px;
+    border-radius: 20%;
+}
+
+.card{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+.vid-container{
+    padding: 2%; 
+    border-radius: 10%;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.btn-group{
+    width: 300px;
+    padding: 2%;
+}
