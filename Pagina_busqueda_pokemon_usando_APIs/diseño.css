@@ -1,0 +1,56 @@
+/*Garcia Gomez Eduardo Biali*/
+.body-container{
+    margin: 20px;
+    background-image: url(https://static.wikia.nocookie.net/espokemon/images/8/8f/Ciudad_Coraz%C3%B3n.png/revision/latest?cb=20090730225038);
+}
+
+.title-container{
+    font-family: 'Pokemon Solid', sans-serif;
+    color: rgb(255, 255, 3);
+    -webkit-text-stroke-width: 2px; /*Contorno de las letras*/
+    -webkit-text-stroke-color: rgb(36, 21, 172);
+}
+
+.pokemon-container {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.card{
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px; 
+}
+
+.input-group {
+    margin: auto; /*Con el margin pude centrar solo el input sin afectar al card del bootstrap*/
+    width: 50%; 
+    padding: 10px; 
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde con color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    
+}
+
+.search-history{
+    margin: auto; /*Con el margin pude centrar solo el input sin afectar al card del bootstrap*/
+    background-color: bisque;
+    width: 50%; 
+    padding: 10px; 
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde con color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/*Hacer que los recuadros del historial se sombreen al pasar el cursor sobre el*/
+.list-group-item:hover {
+    background-color: #f0f0f0; /* Cambia a un gris claro */
+    cursor: pointer; /* Cambia el cursor a un puntero para indicar que es clicable */
+}

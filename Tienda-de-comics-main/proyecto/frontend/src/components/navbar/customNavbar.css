@@ -1,0 +1,16 @@
+.dropdown-menu {
+  --bs-dropdown-bg: transparent !important;
+  --bs-dropdown-border-color: transparent !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: rgb(209, 202, 202) !important;
+}
+
+.notifications .dropdown-toggle::after {
+  content: none !important;
+}
